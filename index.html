@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio & News - Obenhard Pasaribu</title>
+    <!-- Hubungkan CSS eksternal -->
+    <link rel="stylesheet" href="costumindex.css" />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav>
+      <button onclick="goToSlide(0)">About Me</button>
+      <button onclick="goToSlide(1)">News</button>
+      <button onclick="goToSlide(2)">Contact</button>
+    </nav>
+
+    <!-- Container Slide -->
+    <div class="container" id="slider">
+      <!-- About -->
+      <section id="about">
+        <div class="profile-pic"></div>
+        <h1>Obenhard Pasaribu</h1>
+        <p>NIM: 11S23001</p>
+        <p id="typing"></p>
+        <div class="card">
+          <h2>CV saya</h2>
+          <p>
+            <a href="CV.html" class="link-blog">Klik Disini</a>
+          </p>
+        </div>
+        <div class="card">
+          <h2>Lihat Tabel Penilaian saya</h2>
+          <p>
+            <a href="Tabel.html" class="link-blog">Klik Disini</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section id="news">
+        <h1>Berita Terbaru</h1>
+        <div class="card">
+          <h2>Temui Cerita Menarik Disini</h2>
+          <p>
+            <a href="BlogSpot.html" class="link-blog">Lihat Blog</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h1>Kontak</h1>
+        <p>Email: <strong>obenpasaribu@gmail.com</strong></p>
+        <p>Phone: <strong>0812-6229-9331</strong></p>
+        <p>Alamat: Tapanuli Tengah, Sumatera Utara</p>
+      </section>
+    </div>
+    <!-- Hubungkan file JS -->
+    <script src="Scriptindex.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Navigasi */
+nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+}
+
+nav button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: white;
+  color: black;
+}
+
+/* Container Slide */
+.container {
+  display: flex;
+  width: 300vw;
+  height: 100vh;
+  transition: transform 0.7s ease-in-out;
+}
+
+section {
+  flex: 0 0 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+  transition: opacity 0.7s ease-in-out;
+}
+
+section.active {
+  opacity: 1;
+}
+
+/* Warna background */
+#about {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+#news {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+#contact {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+/* Foto profil */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 20px;
+  background: url("assets/foto2\ \(1\).jpg") no-repeat center/cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Blog Card */
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 10px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+/* Link */
+.link-blog {
+  color: rgb(246, 72, 168);
+  text-decoration: underline;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}

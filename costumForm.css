@@ -1,0 +1,123 @@
+/* Reset dasar */
+body,
+h1,
+p,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+hr {
+  margin: 10px 0 20px;
+}
+
+/* Input dan select */
+input[type="text"],
+input[type="date"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #5c6bc0;
+  outline: none;
+}
+
+/* Fieldset */
+fieldset {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #444;
+}
+
+label {
+  display: block;
+  margin: 6px 0;
+  color: #333;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Tombol */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button.reset {
+  background: #f44336;
+  color: white;
+  margin-right: 10px;
+}
+
+button.reset:hover {
+  background: #d32f2f;
+}
+
+button.submit {
+  background: #4caf50;
+  color: white;
+}
+
+button.submit:hover {
+  background: #388e3c;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
